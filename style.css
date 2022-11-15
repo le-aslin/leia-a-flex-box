@@ -57,7 +57,7 @@ img{
   width: 450px;
   padding-bottom: 450px; 
   margin-bottom: 100px; 
-  background-color: aliceblue;
+  background-color: rgb(151, 22, 22);
   margin-top: 10px;
   font-size: 30px;
   font-style: blowbrush  ;
@@ -123,4 +123,27 @@ footer.content h3{
   font-size: 30px;
   font-family: 'Times New Roman', Times, serif;
 }
+h3{
+  color: rgb(151, 22, 22);
+}
+.documentation{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.resolutions{
+  height: 90px;
+  margin-bottom: 100px;
+  margin-top: 100px;
+  background-color: rgb(151, 22, 22);
+  width: 90%;
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Times New Roman', Times, serif;
+  border-radius: 10px;
+  border: 5px black solid;
+}
 
+.photo{
+  
+}
