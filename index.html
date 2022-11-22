@@ -4,18 +4,119 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <script src="/dropdown.js"></script>
         <nav id="topnav">
             <a id="logo" class="nav-link"><img src="/img/pumpkin.webp" alt="pumpkinlogo.png"></a>
             <a class="nav-link" href="./index.html"> Hem</a>
             <a class="nav-link" href="./html/about.html">Om oss</a>
             <a class="nav-link" href="./html/products.html">Produkter</a>
             <a class="nav-link" href="./html/contact.html">Kontakta oss</a>
-            <a id="cart" class="nav-link" href="./html/cart.html"><img src="./img/cart.png" alt="shoppingcart.png"></a>
+            <a id="cart" class="nav-link" href="./html/cart.html">
+                <img src="./img/cart.png" alt="shoppingcart.png"></a>
          </nav>
-
+         <!--varför blir alla mina dropdowns kopplade till en?-->
+         <h2> Våra Favoriter just nu!</h2>
+         <div class="container">
+            <div class="item">
+                <h4>Klassiska!</h4>
+                    <img class="photo" src="/img/skeletoncostume.webp" alt="skeletoncostume.png">
+                        <h4>Skelett</h4>
+                            <button>add to cart</button>
+                            <div class="dropdown">
+                                <button onclick="myFunction()" class="dropbtn">Sizes</button>
+                                <div id="myDropdown" class="dropdown-content">
+                                  <a href="#">XS</a>
+                                  <a href="#">S</a>
+                                  <a href="#">M</a>
+                                  <a href="#">L</a>
+                                  <a href="#">XL</a>
+                                </div>
+                              </div>
+            </div>
+            <div class="item">
+                <h4>Marvel!</h4>
+                    <img class="photo" src="/img/deadpool.jpg" alt="deadpoolcostume.png">
+                        <h4>Deadpool</h4>
+                          <button>add to cart</button>
+                          <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn">Sizes</button>
+                            <div id="myDropdown" class="dropdown-content">
+                              <a href="#">XS</a>
+                              <a href="#">S</a>
+                              <a href="#">M</a>
+                              <a href="#">L</a>
+                              <a href="#">XL</a>
+                            </div>
+                          </div>
+            </div>
+            <div class="item">
+                <h4>DC!</h4>
+                    <img class="photo" src="/img/joker.jpg" alt="jokercostume.png">
+                        <h4>Joker</h4>
+                           <button>add to cart</button>
+                           <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn">Sizes</button>
+                            <div id="myDropdown" class="dropdown-content">
+                              <a href="#">XS</a>
+                              <a href="#">S</a>
+                              <a href="#">M</a>
+                              <a href="#">L</a>
+                              <a href="#">XL</a>
+                            </div>
+                          </div>
+                </div>
+            <div class="item">
+                <h4>Barn!</h4>
+                    <img class="photo" src="/img/babypumpkin.webp" alt="babypumpkin.png">
+                        <h4>Pumpadräkt för bebis</h4>
+                            <button>add to cart</button>
+                            <div class="dropdown">
+                                <button onclick="myFunction()" class="dropbtn">Sizes</button>
+                                <div id="myDropdown" class="dropdown-content">
+                                  <a href="#">XS</a>
+                                  <a href="#">S</a>
+                                  <a href="#">M</a>
+                                  <a href="#">L</a>
+                                  <a href="#">XL</a>
+                                </div>
+                              </div>
+            </div>
+            <div class="item">
+                <h4>Duo!</h4>
+                    <img class="photo" src="/img/avocados.jpg" alt="avocadoduo.png">
+                        <h4>Avokado för duon</h4>
+                            <button>add to cart</button>
+                            <div class="dropdown">
+                                <button onclick="myFunction()" class="dropbtn">Sizes</button>
+                                <div id="myDropdown" class="dropdown-content">
+                                  <a href="#">XS</a>
+                                  <a href="#">S</a>
+                                  <a href="#">M</a>
+                                  <a href="#">L</a>
+                                  <a href="#">XL</a>
+                                </div>
+                              </div>
+            </div>
+            <div class="item">
+                <h4>Läskigaste!</h4>
+                    <img class="photo" src="/img/alien.jpg" alt="scaryalien.png">
+                        <h4>Läskig alien</h4>
+                            <button>add to cart</button>
+                            <div class="dropdown">
+                                <button onclick="myFunction()" class="dropbtn">Sizes</button>
+                                <div id="myDropdown" class="dropdown-content">
+                                  <a href="#">XS</a>
+                                  <a href="#">S</a>
+                                  <a href="#">M</a>
+                                  <a href="#">L</a>
+                                  <a href="#">XL</a>
+                                </div>
+                              </div>
+                </div>
         <footer>
             <div class="footer-content">
-                <a href="./html/documentation.html"><h3>Dokumentation</h3></a>
+                <a href="./html/documentation.html">
+                    <h3>Dokumentation</h3></a>
             </div>
         </footer>
         
