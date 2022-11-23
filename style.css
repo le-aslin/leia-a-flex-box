@@ -6,10 +6,29 @@
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
   }
+  h1{
+    text-align: center;
+    margin-top: 100px;
+  }
+  h2{
+    color: black;
+    font-size: 70px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(151, 22, 22);
+    border: 3px rgb(76, 8, 8);
+    border-style: solid;
+    border-radius: 10px;
+    margin-top: 100px;
+    text-align: center;
+   }
+   h3{
+    color: rgb(151, 22, 22);
+  }
   h4{
     margin-bottom: 1px;
     margin-top: 1px;
     font-family:'Times New Roman', Times, serif;
+    background-color: white;
   }
   li{
     text-align: center ;
@@ -41,10 +60,7 @@
   text-align: center;    
   line-height: 50px;     
   text-decoration: none;
-}
-h1{
-  text-align: center;
-  margin-top: 100px;
+  z-index: 15;
 }
 img{
   height: 70px;
@@ -66,17 +82,6 @@ img{
   font-style: blowbrush  ;
   text-align: center;
   margin-top: 5px;
-}
-h2{
- color: black;
- font-size: 70px;
- font-family: 'Times New Roman', Times, serif;
- background-color: rgb(151, 22, 22);
- border: 3px rgb(76, 8, 8);
- border-style: solid;
- border-radius: 10px;
- margin-top: 100px;
- text-align: center;
 }
 .container-two {
   display: flex;
@@ -126,9 +131,6 @@ footer.content h3{
   font-size: 30px;
   font-family: 'Times New Roman', Times, serif;
 }
-h3{
-  color: rgb(151, 22, 22);
-}
 .documentation{
   display: flex;
   flex-direction: column;
@@ -137,6 +139,21 @@ h3{
 .resolutions{
   height: auto;
   margin-bottom: 10px;
+  margin-top: 100px;
+  background-color: rgb(151, 22, 22);
+  width: 70%;
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Times New Roman', Times, serif;
+  border-radius: 10px;
+  border: 5px black solid;
+}
+/*denna class är speciell eftersom det är div 
+som är längst ner och behöver ha en annan mängd 
+på margin-bottom så man skulle kunna se texten*/
+.resolutions-end{
+  height: auto;
+  margin-bottom: 100px;
   margin-top: 100px;
   background-color: rgb(151, 22, 22);
   width: 70%;
@@ -190,67 +207,29 @@ button:hover{
   padding: 10px;
   font-size: 12px;
   border: none;
-  cursor: pointer;
-  z-index: 12;
-}
-.dropbtn-one {
-  background-color: rgb(76, 8, 8);
-  color: white;
-  padding: 10px;
-  font-size: 12px;
-  border: none;
-  cursor: pointer;
-  z-index: 12;
-}
-.dropbtn:hover, .dropbtn:focus {
-  background-color: rgb(76, 8, 8);
-}
-.dropbtn-one:hover, .dropbtn-.dropbtn-one:focus {
-  background-color: rgb(76, 8, 8);
 }
 .dropdown {
-  position: relative;
-  display: inline-block;
-}
-.dropdown-one {
   position: relative;
   display: inline-block;
 }
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
-  min-width: 100%;
-  overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-.dropdown-content-one {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 100%;
-  overflow: auto;
+  background-color: white;
+  min-width: 16px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 .dropdown-content a {
   color: black;
-  padding: 6px 8px;
+  padding: 8px 10px;
   text-decoration: none;
   display: block;
   font-size: 12px;
 }
-.dropdown-content a:hover {background-color: #ddd;
+.dropdown-content a:hover {background-color: white;
 }
-.dropdown-content-one a {
-  color: black;
-  padding: 6px 8px;
-  text-decoration: none;
-  display: block;
-  font-size: 12px;
+.dropdown:hover .dropdown-content {display: block;
 }
-.dropdown-content-one a:hover {background-color: #ddd;
-}
-.show {display:block;
+.dropdown:hover .dropbtn {background-color:rgb(76, 8, 8);
 }
