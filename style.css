@@ -6,10 +6,12 @@
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
   }
+  /*text align centrerar texten på sidan, margin 10% är hur mycket rum det är mellan texten och sidorna på sidan*/
   h1{
     text-align: center;
     margin-top: 100px;
   }
+    /*margin top gör så att texten kom nedanför min nav bar på toppen iställe för att gömmas bakom*/
   h2{
     color: black;
     font-size: 70px;
@@ -21,6 +23,7 @@
     margin-top: 100px;
     text-align: center;
    }
+     /*background color och border gjorde så att det blev en röd border bakom med rundade kanter och är solid.*/
    h3{
     color: rgb(151, 22, 22);
   }
@@ -39,6 +42,7 @@
   body{
     background-color: gray;
   }
+    /*Gör så att hela min sida har grå backgrund*/
   #topnav {
     width: 100%;
     position: fixed;
@@ -49,8 +53,10 @@
     font-size: 25px;
     justify-content: center;
     z-index: 15;
-
  }
+   /*med position fixed är min navbar alltid vid toppen även när man scrollar.
+   z-index 15 gör så att alla andra classer o tag som har lägre z-index försvinner
+   bakom vilket gör hemsidan snyggare.*/
  .nav-link {
   display: inline-block;
   width: 140px;
@@ -62,6 +68,7 @@
   text-decoration: none;
   z-index: 15;
 }
+  /**/
 img{
   height: 70px;
   width: 70px;
@@ -71,7 +78,7 @@ img{
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
+  /**/
 .item {
   width: 450px;
   padding-bottom: 50px; 
@@ -83,10 +90,11 @@ img{
   text-align: center;
   margin-top: 5px;
 }
+  /**/
 .container-two {
   display: flex;
 }
-
+  /**/
 .item-two {
   flex-grow: 1;
   background-color:rgb(151, 22, 22);
@@ -100,6 +108,7 @@ img{
   margin-left: 5px;
   margin-right: 5px;
 }
+  /**/
 .item-two img{
   width: 400px;
   height: 400px;
@@ -108,9 +117,11 @@ img{
   margin-top: 20px;
   border-radius: 5px;
 }
+  /**/
 .item-two + .item-two {
   margin-left: 2%;
 }
+  /**/
 footer{
   position: fixed;
   left: 0;
@@ -120,6 +131,7 @@ footer{
   color: rgb(151, 22, 22);
   text-align: center;
 }
+  /**/
 footer.content{
   display: flex;
     align-items: center;
@@ -127,15 +139,18 @@ footer.content{
     flex-direction: column;
     text-align: center;
 }
+  /**/
 footer.content h3{
   font-size: 30px;
   font-family: 'Times New Roman', Times, serif;
 }
+  /**/
 .documentation{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+  /**/
 .resolutions{
   height: auto;
   margin-bottom: 10px;
@@ -148,9 +163,7 @@ footer.content h3{
   border-radius: 10px;
   border: 5px black solid;
 }
-/*denna class är speciell eftersom det är div 
-som är längst ner och behöver ha en annan mängd 
-på margin-bottom så man skulle kunna se texten*/
+  /**/
 .resolutions-end{
   height: auto;
   margin-bottom: 100px;
@@ -163,7 +176,9 @@ på margin-bottom så man skulle kunna se texten*/
   border-radius: 10px;
   border: 5px black solid;
 }
-
+/*denna class är speciell eftersom det är div 
+som är längst ner och behöver ha en annan mängd 
+på margin-bottom så man skulle kunna se texten*/
 .photo{
   align-items: center;
   margin-top: 20px;
@@ -172,15 +187,17 @@ på margin-bottom så man skulle kunna se texten*/
   border: solid black 5px;
   border-radius: 5px;
 }
+  /**/
 .photo:hover{
   -webkit-filter: brightness(50%);
 }
-
+  /**/
 #cart {
   position: absolute;
   top: 0;
   right: 0;
 }
+  /**/
 .suicide{
   width: fit-content;
   height: fit-content;
@@ -190,6 +207,7 @@ på margin-bottom så man skulle kunna se texten*/
   width: 70%;
   border: solid black 5px;
 }
+  /**/
 a:hover{
   -webkit-filter: brightness(50%);
 }
@@ -201,6 +219,7 @@ button:hover{
   margin-top: 5px;
   text-align: center;
 }
+  /**/
 .dropbtn {
   background-color: rgb(76, 8, 8);
   color: white;
@@ -208,10 +227,12 @@ button:hover{
   font-size: 12px;
   border: none;
 }
+  /**/
 .dropdown {
   position: relative;
   display: inline-block;
 }
+  /**/
 .dropdown-content {
   display: none;
   position: absolute;
@@ -220,6 +241,7 @@ button:hover{
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
+  /**/
 .dropdown-content a {
   color: black;
   padding: 8px 10px;
@@ -227,9 +249,13 @@ button:hover{
   display: block;
   font-size: 12px;
 }
+  /**/
 .dropdown-content a:hover {background-color: white;
 }
+  /**/
 .dropdown:hover .dropdown-content {display: block;
 }
+  /**/
 .dropdown:hover .dropbtn {background-color:rgb(76, 8, 8);
 }
+  /**/
